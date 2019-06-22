@@ -37,7 +37,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        message:'here is my message',
+        message:'This was my attempt to build a NodeJs weather app',
         title: 'Help',
         name: 'Ray Williams'
     })
@@ -100,5 +100,5 @@ app.get('*', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`server up on port 3000 ${port}`)
+    console.log(`server up on port ${port}`)
 })
